@@ -3450,12 +3450,12 @@ footer .socials a:hover {
         href="assets/guidebook.pdf"
         class="btn btn-primary"
         id="btnGuidebook"
-        target="_blank"
-        rel="noopener"
-        download
+        download="Guidebook.pdf"
+        type="application/pdf"
       >
         Download Guidebook
       </a>
+
 
       <!-- 🔽 Tombol Lihat Kompetisi -->
       <a href="#kompetisi" class="btn btn-ghost" id="btnKompetisi">
@@ -4312,29 +4312,34 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+</script>
 
-  // Cek apakah file guidebook ada
-  const guidebookBtn = document.getElementById("primaryCta");
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const guidebookBtn = document.getElementById("btnGuidebook");
+  
   if (guidebookBtn) {
     fetch(guidebookBtn.href, { method: "HEAD" })
       .then(res => {
         if (!res.ok) {
-          guidebookBtn.removeAttribute("href");
-          guidebookBtn.removeAttribute("download");
-          guidebookBtn.addEventListener("click", e => {
-            e.preventDefault();
-            alert("⚠️ Guidebook belum tersedia.");
-          });
+          disableGuidebookBtn(guidebookBtn);
         }
       })
       .catch(() => {
-        guidebookBtn.removeAttribute("href");
-        guidebookBtn.removeAttribute("download");
-        guidebookBtn.addEventListener("click", e => {
-          e.preventDefault();
-          alert("⚠️ Guidebook belum tersedia.");
-        });
+        disableGuidebookBtn(guidebookBtn);
       });
+  }
+
+  function disableGuidebookBtn(btn) {
+    btn.removeAttribute("href");
+    btn.removeAttribute("download");
+    btn.style.cursor = "not-allowed";
+    btn.textContent = "Guidebook belum tersedia";
+    btn.classList.add("disabled");
+    btn.addEventListener("click", e => {
+      e.preventDefault();
+      alert("⚠️ Guidebook belum tersedia.");
+    });
   }
 });
 </script>

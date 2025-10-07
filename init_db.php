@@ -170,28 +170,28 @@ try {
                 "Essay Competition",
                 "Kompetisi menulis esai untuk melatih kemampuan analisis dan berpikir kritis peserta.",
                 "<svg width='28' height='28'><rect width='24' height='24' fill='none' stroke='currentColor' stroke-width='2'/></svg>",
-                "https://bit.ly/FormPendaftaranLombaEssayYRI", // registration link
+                "https://summitofstars.mhteams.my.id/pendaftaran", // registration link
                 "https://bit.ly/PengumpulanKaryaEssayYRI"      // submission link
             ],
             [
                 "Debate Competition",
                 "Kompetisi debat untuk melatih kemampuan berbicara, logika, dan persuasi peserta.",
                 "<svg width='28' height='28'><circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-width='2'/></svg>",
-                "https://bit.ly/FormPendaftaranLombaDebatYRI",
+                "https://summitofstars.mhteams.my.id/pendaftaran",
                 null
             ],
             [
                 "Innovation Case Competition",
                 "Kompetisi inovasi kasus untuk mengembangkan solusi kreatif dan praktis terhadap permasalahan nyata.",
                 "<svg width='28' height='28'><polygon points='12,2 22,22 2,22' fill='none' stroke='currentColor' stroke-width='2'/></svg>",
-                "https://bit.ly/FormPendaftaranLombaInovasiCaseYRI",
+                "https://summitofstars.mhteams.my.id/pendaftaran",
                 "https://bit.ly/PengumpulanKaryaInovasiCaseYRI"
             ],
             [
                 "Puzzle Competition",
                 "Kompetisi teka-teki untuk mengasah kemampuan logika, strategi, dan problem solving peserta.",
                 "<svg width='28' height='28'><path d='M2 2 L22 2 L22 22 L2 22 Z' fill='none' stroke='currentColor' stroke-width='2'/></svg>",
-                "https://bit.ly/formulirpendaftaranlogicpuzzle",
+                "https://summitofstars.mhteams.my.id/pendaftaran",
                 null
             ]
         ];
